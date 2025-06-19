@@ -1,0 +1,66 @@
+/* Skills Section Container */
+.container-skill {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.card-skill {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+
+/* Skill Title */
+.title-skill p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Skill Row Styling */
+.content-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row-skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.row-skill:last-child {
+  border-bottom: none;
+}
+
+.row-skill .icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  flex: 0 0 40px;
+  color: #4a4a4a;
+}
+
+.row-skill .desc {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.row-skill .level {
+  flex: 0 0 120px;
+  text-align: right;
+  color: #666;
+  font-style: italic;
+}
