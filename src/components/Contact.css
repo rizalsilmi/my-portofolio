@@ -1,0 +1,170 @@
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  /* background-color: #0d1117; Dark GitHub-like background */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-contact{
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.content-card {
+  width: 100%;
+}
+
+
+
+.github-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  /* font-size: 1.1rem; */
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.github-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3498db 0%, #3498db 100%);
+  opacity: 60%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.github-card:hover::before {
+  transform: scaleX(1);
+}
+
+.github-card a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.github-card:hover span {
+  transition: color 0.3s ease;
+}
+
+.github-card:hover span {
+  color: white;
+  transition-delay: 0.1s;
+}
+
+.github-icon:hover {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.github-icon {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.linkedin-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  /* font-size: 2rem; */
+  gap: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.linkedin-icon {
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.wa-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  /* font-size: 2rem; */
+  gap: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.wa-icon {
+  font-size: 1.5rem;
+  color: green;
+}
+
+.email-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  /* font-size: 2rem; */
+  gap: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.email-icon {
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+
+.footer-title{
+  padding: 3rem 4rem
+}
