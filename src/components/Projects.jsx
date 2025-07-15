@@ -4,7 +4,7 @@ import { FiEye } from 'react-icons/fi';
 
 function Projects(){
     return(
-        <section className="section-projects">
+        <section id="projects" className="section-projects">
             <h2 className="section-title">
                 Projects
             </h2>

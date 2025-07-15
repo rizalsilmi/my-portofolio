@@ -9,7 +9,7 @@ import { FaClipboardList, FaChalkboardTeacher } from "react-icons/fa"; // ✅ ic
 
 function Skills() {
     return (
-        <section className="section-skills">
+        <section id="skills" className="section-skills">
             <h2 className="section-title">Skills</h2>
             <div className="container-skill">
                 {/* Programming Languages */}

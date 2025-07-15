@@ -2,11 +2,9 @@
 .section-contact {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 3rem 1rem;
   background-color: #f9f9f9;
-  /* background-color: #0d1117; Dark GitHub-like background */
 }
 
 .section-title {
@@ -28,8 +26,6 @@
   width: 100%;
 }
 
-
-
 .github-card {
   display: flex;
   align-items: center;
@@ -42,7 +38,6 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
-  /* font-size: 1.1rem; */
   gap: 0.75rem;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -78,6 +73,12 @@
   transition: color 0.3s ease;
 }
 
+.github-icon {
+  font-size: 1.5rem;
+  color: black;
+  transition-delay: 0.1s;
+}
+
 .github-card:hover span {
   transition: color 0.3s ease;
 }
@@ -87,15 +88,12 @@
   transition-delay: 0.1s;
 }
 
-.github-icon:hover {
+.github-card:hover .github-icon {
   font-size: 1.5rem;
   color: white;
 }
 
-.github-icon {
-  font-size: 1.5rem;
-  color: black;
-}
+/* ---------------------------------- */ 
 
 .linkedin-card {
   display: flex;
@@ -112,12 +110,52 @@
   /* font-size: 2rem; */
   gap: 0.75rem;
   transition: transform 0.2s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.linkedin-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3498db 0%, #3498db 100%);
+  opacity: 60%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+
+.linkedin-card:hover::before {
+  transform: scaleX(1);
 }
 
 .linkedin-icon {
   font-size: 1.5rem;
   color: blue;
+  transition: color 0.3s ease;
 }
+
+.linkedin-card:hover span {
+  transition: color 0.3s ease;
+}
+
+.linkedin-card:hover span {
+  color: white;
+  transition-delay: 0.1s;
+}
+
+.linkedin-card:hover .linkedin-icon {
+  /* font-size: 1.5rem; */
+  color: white;
+}
+
+/* ---------------------------------- */
 
 .wa-card {
   display: flex;
@@ -134,12 +172,53 @@
   /* font-size: 2rem; */
   gap: 0.75rem;
   transition: transform 0.2s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .wa-icon {
   font-size: 1.5rem;
   color: green;
+  transition-delay: 0.1s;
 }
+
+.wa-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3498db 0%, #3498db 100%);
+  opacity: 60%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+
+.wa-card:hover::before {
+  transform: scaleX(1);
+}
+
+.wa-card:hover span {
+  transition: color 0.3s ease;
+}
+
+.wa-card:hover span {
+  color: white;
+  transition-delay: 0.1s;
+}
+
+.wa-card:hover .wa-icon {
+  /* font-size: 1.5rem; */
+  color: white;
+}
+
+
+/* ---------------------------------- */
 
 .email-card {
   display: flex;
@@ -156,12 +235,51 @@
   /* font-size: 2rem; */
   gap: 0.75rem;
   transition: transform 0.2s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .email-icon {
   font-size: 1.5rem;
   color: black;
+  transition-delay: 0.1s;
 }
+
+.email-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #3498db 0%, #3498db 100%);
+  opacity: 60%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+  z-index: -1;
+}
+
+
+.email-card:hover::before {
+  transform: scaleX(1);
+}
+
+.email-card:hover span {
+  transition: color 0.3s ease;
+}
+
+.email-card:hover span {
+  color: white;
+  transition-delay: 0.1s;
+}
+
+.email-card:hover .email-icon {
+  /* font-size: 1.5rem; */
+  color: white;
+}
+
 
 
 
